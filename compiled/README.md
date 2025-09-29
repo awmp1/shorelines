@@ -9,7 +9,7 @@ Go to the VSCode terminal and run:
 
 ```
 bash
-cd test
+cd compiled
 chmod +x launchShorelineS.sh runShorelineS.exe 
 ./launchShorelineS.sh /opt/matlabruntime/R2025b/ 'input.txt' 
 ```
