@@ -1,10 +1,10 @@
-LDBcoastline='/workspaces/shorelines/script/Data/LDB_161/1984-01-09-1984-07-07_IM_L4_UTM_SLini_South.txt'          
+LDBcoastline='script/Data/LDB_161/1984-01-09-1984-07-07_IM_L4_UTM_SLini_South.txt'          
                                 % LDB with initial coastline shape ([Nx2] ASCII FILE WITHOUT HEADER)
                                 % <- leave empty to use interactive mode!
 start=0
 struct=1                     % switch for using hard structures
 channel=1
-LDBchannel='/workspaces/shorelines/script/Data/Senegal.txt'
+LDBchannel='script/Data/Senegal.txt'
 channel_width=[300]
 channel_fac=0.2
 x_hard=[337200 337200 350000]
@@ -19,10 +19,10 @@ y_hard=[1754600 1755100 1755100]
 wavetransm = [0,0]           % transmission coeficient of the structures
                                 % array size equal to number of structure
                                 % sections
-LDBplot = {'/workspaces/shorelines/script/Data/LDB_161/1984-01-09-1984-07-07_IM_L4_UTM.txt','1984','k:'...
-             '/workspaces/shorelines/script/Data/LDB_161/1984-10-23-1985-04-21_IM_L4_UTM.txt','1985','b:'...
-             '/workspaces/shorelines/script/Data/LDB_161/1988-08-31-1989-02-27_IM_L4_UTM.txt','1988','g:'...
-             '/workspaces/shorelines/script/Data/LDB_161/2003-02-06-2003-08-05_IM_L4_UTM.txt','2003','r:'...
+LDBplot = {'script/Data/LDB_161/1984-01-09-1984-07-07_IM_L4_UTM.txt','1984','k:'...
+             'script/Data/LDB_161/1984-10-23-1985-04-21_IM_L4_UTM.txt','1985','b:'...
+             'script/Data/LDB_161/1988-08-31-1989-02-27_IM_L4_UTM.txt','1988','g:'...
+             'script/Data/LDB_161/2003-02-06-2003-08-05_IM_L4_UTM.txt','2003','r:'...
              }                 % Filenames, dates and line codes of o=bserved coastlines
 xlimits=[ 330000  345000]    % x-limits of plot area
 ylimits=[1745000 1755000]    % y-limits of plot area
@@ -58,3 +58,4 @@ storageinterval=1
 fignryear=12
 smoothfac=0.01
 usefill=0
+
