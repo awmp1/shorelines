@@ -20,5 +20,6 @@ RUN micromamba create -y -n bluemath -c conda-forge python=3.11 pip bluemath-tk 
 
 # Auto-activate env for interactive shells
 SHELL ["bash", "-lc"]
+ENV SHELL=/bin/bash
 RUN echo 'eval "$(micromamba shell hook -s bash)" && micromamba activate bluemath' >> /etc/bash.bashrc
 
